@@ -1,0 +1,78 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Railway Reservation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Railway Reservation System</h1>
+
+    <form id="reservationForm">
+      <div class="input-group">
+        <label>Passenger Name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="input-group">
+        <label>Age</label>
+        <input type="number" id="age" required>
+      </div>
+
+      <div class="input-group">
+        <label>Gender</label>
+        <select id="gender" required>
+          <option value="">Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>From</label>
+        <input type="text" id="from" required>
+      </div>
+
+      <div class="input-group">
+        <label>To</label>
+        <input type="text" id="to" required>
+      </div>
+
+      <div class="input-group">
+        <label>Travel Date</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="input-group">
+        <label>Train Class</label>
+        <select id="class" required>
+          <option value="">Select</option>
+          <option>Sleeper</option>
+          <option>AC</option>
+          <option>First Class</option>
+        </select>
+      </div>
+
+      <button type="submit">Book Ticket</button>
+    </form>
+
+    <div class="ticket" id="ticket">
+      <h2>Ticket Confirmed</h2>
+      <p><strong>Name:</strong> <span id="tName"></span></p>
+      <p><strong>Age:</strong> <span id="tAge"></span></p>
+      <p><strong>Gender:</strong> <span id="tGender"></span></p>
+      <p><strong>From:</strong> <span id="tFrom"></span></p>
+      <p><strong>To:</strong> <span id="tTo"></span></p>
+      <p><strong>Date:</strong> <span id="tDate"></span></p>
+      <p><strong>Class:</strong> <span id="tClass"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
