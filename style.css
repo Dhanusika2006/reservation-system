@@ -1,0 +1,82 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: linear-gradient(to right, #1d2671, #c33764);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  background:white;
+  width:400px;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+h1{
+  text-align:center;
+  margin-bottom:20px;
+  color:#1d2671;
+}
+
+.input-group{
+  margin-bottom:15px;
+}
+
+label{
+  display:block;
+  margin-bottom:5px;
+  font-weight:bold;
+}
+
+input,
+select{
+  width:100%;
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  background:#1d2671;
+  color:white;
+  font-size:16px;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#c33764;
+}
+
+.ticket{
+  margin-top:20px;
+  padding:15px;
+  background:#f4f4f4;
+  border-radius:8px;
+  display:none;
+}
+
+.ticket h2{
+  color:green;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.ticket p{
+  margin:6px 0;
+}
